@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: linkding
+    ports:
+      - "29002:9090"
+    volumes:
+      - linkding_data:/etc/linkding/data
+
+volumes:
+  linkding_data:
